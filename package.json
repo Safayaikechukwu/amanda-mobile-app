@@ -1,8 +1,18 @@
 {
-  "name": "udara-mobile",
+  "name": "amanda-mobile-app",
+  "description": "Cross-platform Expo finance app: chat assistant, insights, and savings buckets for iOS, Android, and web.",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Safayaikechukwu/amanda-mobile-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Safayaikechukwu/amanda-mobile-app/issues"
+  },
+  "homepage": "https://github.com/Safayaikechukwu/amanda-mobile-app#readme",
+  "author": "Safaya Ikechukwu <safayasamuelsikechukwu@gmail.com>",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
