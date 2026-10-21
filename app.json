@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "Udara",
+    "slug": "udara",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/udara-mark.png",
+    "scheme": "udara",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/udara-splash-mark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4a0508"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.useudara.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4a0508",
+        "foregroundImage": "./assets/images/udara-mark.png"
+      },
+      "package": "com.useudara.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "sitemap": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/udara-splash-mark.png",
+          "imageWidth": 140,
+          "resizeMode": "contain",
+          "backgroundColor": "#4a0508"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Udara needs photo access to attach receipts and images.",
+          "cameraPermission": "Udara needs camera access to scan receipts and QR codes."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Udara needs the microphone so you can Speak to ask about your money."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Udara uses Face ID to sign you in quickly and keep your account secure."
+        }
+      ],
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/udara-mark.png",
+          "color": "#4a0508",
+          "enableBackgroundRemoteNotifications": true
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
